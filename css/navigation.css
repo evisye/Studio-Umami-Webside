@@ -59,6 +59,15 @@ html { scroll-padding-top: 100px; }
 @media(max-width:900px){.su-footer-main{grid-template-columns:180px 1fr;gap:24px 36px}.su-footer-brand img{width:180px}.su-footer-contact{grid-column:2}.su-footer-links{gap:10px 20px}}
 @media(max-width:600px){.su-footer-inner{padding:28px 20px 18px}.su-footer-main{grid-template-columns:1fr;gap:22px}.su-footer-contact{grid-column:auto}.su-footer-brand img{width:180px}.su-footer-bottom{margin-top:22px;padding-top:14px}}
 
+/* Large desktop wordmark; keep the compact phone footer. */
+@media(min-width:901px){
+ .su-footer-inner{padding-top:40px}
+ .su-footer-main{grid-template-columns:minmax(0,1fr) 260px;gap:32px 64px}
+ .su-footer-brand{grid-column:1/-1;padding:0}
+ .su-footer-brand img{width:100%;height:auto}
+ .su-footer-links{max-width:560px}
+}
+
 /* One colour system for every website action. */
 :root{--su-action:#315342;--su-action-hover:#243f32;--su-action-active:#192e24;--su-action-soft:#edf3ee;--su-action-ring:#598e69}
 #ue-page a.btn-ece02,#submit,.su-navigation a.su-contact{
@@ -75,3 +84,4 @@ html { scroll-padding-top: 100px; }
 #ue-page a.btn-ece02:focus-visible,#submit:focus-visible,#language:focus-visible,.su-menu-toggle:focus-visible,.su-navigation a:focus-visible{outline:3px solid var(--su-action-ring);outline-offset:4px}
 #submit:disabled{background:#718679!important;color:#fff!important;opacity:1;cursor:wait}
 @media(prefers-reduced-motion:reduce){#ue-page a.btn-ece02,#submit,#language,.su-menu-toggle,.su-navigation a.su-contact{transition:none}}
+
