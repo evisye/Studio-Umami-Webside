@@ -42,3 +42,21 @@ html { scroll-padding-top: 100px; }
  #AVGrtVXQ .counter-number-item-de460 { min-width: 0; white-space: normal; }
  #AVGrtVXQ .counter-number-item-desc-dc7f2 { font-size: 13px; line-height: 1.5; overflow-wrap: break-word; }
 }
+
+/* Compact shared footer, independent of the page builder's row spacing. */
+.su-footer{background:#f7f8f6;border-top:1px solid #e3e8e1;color:#263c30;font-family:Arial,Helvetica,sans-serif}
+.su-footer-inner{max-width:1200px;margin:0 auto;padding:36px 32px 20px;box-sizing:border-box}
+.su-footer-main{display:grid;grid-template-columns:220px minmax(240px,1fr) 260px;align-items:start;gap:44px}
+.su-footer-brand{display:block;padding-top:2px}
+.su-footer-brand img{display:block;width:220px;max-width:100%;height:auto}
+.su-footer-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 24px}
+.su-footer a{font-size:14px;line-height:1.6;color:#3f5346;text-decoration:none}
+.su-footer a:hover{text-decoration:underline}
+.su-footer a:focus-visible{outline:2px solid #598e69;outline-offset:4px}
+.su-footer-contact{display:flex;flex-direction:column;gap:6px}
+.su-footer-contact h2{font:600 15px/1.6 Arial,Helvetica,sans-serif;margin:0 0 2px;color:#263c30}
+.su-footer-contact a{overflow-wrap:anywhere}
+.su-footer-bottom{margin-top:24px;padding-top:16px;border-top:1px solid #e0e6dd}
+.su-footer-bottom small{display:block;font-size:12px;line-height:1.5;color:#6b786d}
+@media(max-width:900px){.su-footer-main{grid-template-columns:180px 1fr;gap:24px 36px}.su-footer-brand img{width:180px}.su-footer-contact{grid-column:2}.su-footer-links{gap:10px 20px}}
+@media(max-width:600px){.su-footer-inner{padding:28px 20px 18px}.su-footer-main{grid-template-columns:1fr;gap:22px}.su-footer-contact{grid-column:auto}.su-footer-brand img{width:180px}.su-footer-bottom{margin-top:22px;padding-top:14px}}
