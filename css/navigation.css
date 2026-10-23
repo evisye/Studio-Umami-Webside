@@ -1,17 +1,17 @@
 /* Shared, responsive site navigation. */
 html { scroll-padding-top: 100px; }
 .su-header { position: sticky; top: 0; z-index: 10000; background: #fff; border-bottom: 1px solid #e5e8e3; font-family: Arial, sans-serif; }
-.su-header-inner { max-width: 1320px; min-height: 86px; margin: auto; padding: 12px 32px; display: flex; align-items: center; justify-content: space-between; gap: 28px; box-sizing: border-box; }
+.su-header-inner { max-width: 1320px; min-height: 86px; margin: auto; padding: 12px 32px; display: flex; align-items: center; justify-content: space-between; gap: 24px; box-sizing: border-box; }
 .su-brand { display: block; flex-shrink: 0; }
 .su-brand img { display: block; width: 155px; height: auto; }
-.su-navigation { display: flex; align-items: center; gap: 25px; }
-.su-navigation a { color: #263c30; font-size: 14px; font-weight: 600; line-height: 1.5; text-decoration: none; padding: 10px 0; }
+.su-navigation { display: flex; align-items: center; justify-content: flex-end; gap: clamp(16px, 1.8vw, 25px); min-width: 0; }
+.su-navigation a { color: #263c30; font-size: 14px; font-weight: 600; line-height: 1.5; text-decoration: none; padding: 10px 0; white-space: nowrap; flex-shrink: 0; }
 .su-navigation a:hover { color: #598e69; }
 .su-navigation .su-contact { padding: 11px 19px; border: 1px solid #598e69; border-radius: 28px; }
 .su-header a:focus-visible, .su-menu-toggle:focus-visible { outline: 3px solid #598e69; outline-offset: 5px; }
 .su-menu-toggle { display: none; }
 #ue-page > [data-key="Logo"] { display: none; }
-@media (max-width: 1000px) {
+@media (max-width: 1149px) {
  .su-header-inner { min-height: 74px; padding: 12px 20px; flex-wrap: wrap; gap: 0; }
  .su-brand img { width: 140px; }
  .su-menu-toggle { display: inline-flex; align-items: center; gap: 10px; padding: 10px 14px; color: #263c30; background: #fff; border: 1px solid #d3ddd4; border-radius: 6px; font: 600 14px Arial, sans-serif; cursor: pointer; }
