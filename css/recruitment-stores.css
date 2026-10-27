@@ -5,3 +5,6 @@
 .su-calendar-nav select{padding:6px 2px!important;font-size:13px!important;height:38px;box-sizing:border-box}
 
 .su-store-field{position:relative}.su-store-dropdown{border:1px solid #cdd6cf;border-radius:12px;background:#fff}.su-store-trigger{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:14px;min-height:24px;font-size:15px;color:#203b2f;cursor:pointer;list-style:none}.su-store-trigger::-webkit-details-marker{display:none}.su-store-trigger:after{content:"⌄";flex-shrink:0}.su-store-dropdown[open] .su-store-trigger:after{content:"⌃"}.su-store-panel{padding:0 12px 12px}.su-store-list{margin-top:10px;max-height:280px}.su-store-done{display:block;margin-top:10px;margin-left:auto;border:0;border-radius:8px;padding:10px 22px;min-height:44px;background:#315342;color:white;cursor:pointer;font:inherit}.su-store-trigger:focus-visible,.su-store-done:focus-visible{outline:2px solid #315342;outline-offset:3px}@media(max-width:600px){.su-store-list{max-height:260px}}
+
+
+.su-store-chip{max-width:100%;overflow-wrap:anywhere;text-align:left;line-height:1.4}
