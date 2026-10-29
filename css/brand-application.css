@@ -1,0 +1,38 @@
+/* Isolated brand application pages: retain the shared form behavior. */
+html:has(.brand-application){background:#f7f9f8;color:#1d342c}
+.brand-application{background:linear-gradient(180deg,#fff 0,#fff 320px,#f7f9f8 620px);min-height:100vh}
+.brand-application main{max-width:1000px;padding:28px 32px 56px}
+.application-brand-line{display:flex;justify-content:space-between;align-items:flex-start;gap:24px}
+.application-logo{display:block;flex:none;object-fit:contain;object-position:left center;background:#fff}
+.application-logo-sh{width:144px;height:144px}
+.application-logo-mt{width:232px;height:144px;object-fit:cover}
+.brand-application .form-toolbar{margin:8px 0 0}
+.brand-application #language{min-height:44px;border-color:#cbd8d1;background:white;color:#284c3d;border-radius:10px}
+.application-intro{display:grid;grid-template-columns:minmax(0,1fr) 204px;gap:32px;align-items:center;margin-top:28px}
+.brand-application #brand{font-size:13px;font-weight:700;color:#486458;letter-spacing:.08em;margin:0 0 10px}
+.brand-application h1{font-size:clamp(28px,3.4vw,38px);font-weight:650;letter-spacing:-.03em;line-height:1.18}
+.brand-application #intro{font-size:15px;line-height:1.6;margin-top:12px;max-width:560px}
+.brand-application .su-careers-film{margin:0;border-radius:14px;box-shadow:none}
+.brand-application .card{margin-top:28px;border:1px solid #dbe4df;border-radius:20px;padding:28px;box-shadow:0 8px 32px #153c2910}
+.brand-application #fields{gap:16px;align-items:start}
+.brand-application #fields>[data-field]{border:1px solid #c9d7cf;border-radius:11px;background:white;padding:10px 12px;min-width:0;margin:0}
+.brand-application #fields>[data-field]>span:first-child,.brand-application #fields>[data-field]>legend{float:left;display:block;width:100%;font-size:12px;line-height:1.5;color:#496154;font-weight:500;margin:0 0 3px;padding:0}
+.brand-application #fields>[data-field]>input:not([type=checkbox]),.brand-application #fields>[data-field]>textarea,.brand-application #fields>[data-field]>select{clear:both;border:0;border-radius:4px;padding:4px 0;margin:0;min-height:28px;font-size:16px;line-height:1.5;background:transparent;color:#1d342c}
+.brand-application #fields>[data-field]:focus-within{border-color:#3c7058;box-shadow:0 0 0 2px #3c705815}
+.brand-application #fields>[data-field]>input:focus-visible,.brand-application #fields>[data-field]>textarea:focus-visible{outline:0}
+.brand-application .su-work-select,.brand-application .su-store-dropdown{clear:both;border:0}
+.brand-application .su-work-select summary,.brand-application .su-store-trigger,.brand-application .su-calendar-trigger{padding:4px 0;min-height:28px;border:0;border-radius:4px;font-size:16px;line-height:1.5}
+.brand-application .su-calendar-trigger{clear:both;display:block}
+.brand-application .su-store-panel{padding:8px 0 0}
+.brand-application .su-store-selected:empty{display:none}
+.brand-application .su-visa-upload{clear:both;padding-top:8px;margin:0}
+.brand-application #fields small{font-size:12px;margin-top:5px}
+.brand-application #resume-field{margin-top:20px;padding:16px;border:1px dashed #bbcfc2;border-radius:12px;background:#f9fbfa;gap:8px}
+.brand-application #resume-label{font-weight:600;color:#314c3e;font-size:14px}
+.brand-application #privacy{margin:22px 0 14px;font-size:12px;line-height:1.6}
+.brand-application .consent{margin:0 0 20px;font-size:13px}
+.brand-application #submit{min-height:50px;background:#285040;border-radius:11px;font-size:16px;transition:background .15s}
+.brand-application #submit:hover{background:#183e2d}
+.brand-application #error{margin-top:16px}
+@media(max-width:639px){.brand-application main{padding:20px 16px 36px}.application-logo-sh{width:112px;height:112px}.application-logo-mt{width:184px;height:112px}.application-brand-line{gap:16px}.brand-application .form-toolbar{margin-top:0}.application-intro{grid-template-columns:minmax(0,1fr) 104px;gap:14px;margin-top:22px;align-items:start}.brand-application #brand{font-size:12px;letter-spacing:.04em;margin-bottom:8px}.brand-application h1{font-size:27px}.brand-application #intro{font-size:14px;grid-column:1/-1}.brand-application .card{margin-top:22px;padding:18px 16px;border-radius:16px}.brand-application #fields{gap:12px}.brand-application .su-careers-film{margin-top:0;border-radius:10px}.brand-application #resume-field{padding:12px}}
+@media(prefers-reduced-motion:reduce){.brand-application #submit{transition:none}}
